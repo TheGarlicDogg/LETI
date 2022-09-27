@@ -4,6 +4,7 @@ int task1();
 int task2();
 int task3();
 int task4();
+int task5();
 
 int main() {
 	setlocale(0, "");
@@ -14,13 +15,15 @@ int main() {
 	return 0;
 }
 int task1() {
-	cout << "Задание 1:" << endl << "int: " << sizeof(int) << endl << "short int: " << sizeof(short int) << endl << "long int: " << sizeof(long int) << endl << "float: " << sizeof(float) << endl << "double: " << sizeof(double) << endl << "long double: " << sizeof(long double) << endl << "char: " << sizeof(char) << endl << "bool: " << sizeof(bool) << endl << endl;
+	cout << "int: " << sizeof(int) << endl << "short int: " << sizeof(short int) << endl << "long int: " << sizeof(long int) << endl << "float: " <<
+		sizeof(float) << endl << "double: " << sizeof(double) << endl << "long double: " << sizeof(long double) << endl << "char: " << sizeof(char) << endl << "bool: " <<
+		sizeof(bool) << endl << endl;
 	return 0;
 }
 
-int task2() {
+	int task2() {
 	int x;
-	cout << "Введите целое число для преобразования в двоичную систему счисления: ";
+	cout << "Введите целое число для представления в двоичной системе счисления: ";
 	cin >> x;
 	int m = 1;
 	m <<= 31;
@@ -39,7 +42,7 @@ int task3() {
 		float xf;
 		int xi;
 	};
-	cout << "Введите число типа float для преобразования в двоичную систему счисления: ";
+	cout << "Введите число типа float для представления в двоичной системе счисления: ";
 	cin >> xf;
 	int m = 1;
 	m <<= 31;
@@ -61,7 +64,7 @@ int task4() {
 		int xarr[2];
 		double xd;
 	};
-	cout << "Введите число типа double для преобразования в двоичную систему счисления: ";
+	cout << "Введите число типа double для представления в двоичной системе счисления: ";
 	cin >> xd;
 	int m = 1;
 	m <<= 31;
